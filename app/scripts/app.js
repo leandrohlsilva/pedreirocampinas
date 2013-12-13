@@ -9,6 +9,10 @@ angular.module('pedreirocampinasApp', [
     .state('home', {
       url: '/',
       templateUrl: '/views/main.html'
+    })
+    .state('404', {
+      url: '/404',
+      template: 'Not found! :('
     });
     $locationProvider.html5Mode(true).hashPrefix('!');
   });
