@@ -13,6 +13,10 @@ angular.module('pedreirocampinasApp', [
     .state('404', {
       url: '/404',
       template: 'Not found! :('
+    })
+    .state('galeria', {
+      url: '/#/galeria',
+      template: 'Not found! :('
     });
     $locationProvider.html5Mode(true).hashPrefix('!');
   });
