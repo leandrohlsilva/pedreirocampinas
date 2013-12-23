@@ -17,6 +17,20 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/config.js"></script>
     <script src="js/skel.min.js"></script>
+    <!-- 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEXjqnNI8kHLeXdDoGThr8UVQDF_CioaE&sensor=false"></script>
+    <script type="text/javascript">
+          function initialize() {
+                      var mapOptions = {
+                                    center: new google.maps.LatLng(-34.397, 150.644),
+                                                      zoom: 8
+                                                                  };
+                              var map = new google.maps.Map(document.getElementById("map-canvas"),
+                                                  mapOptions);
+                                    }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    -->
     <noscript>
       <link rel="stylesheet" href="css/skel-noscript.css" />
       <link rel="stylesheet" href="css/style.css" />
@@ -55,10 +69,10 @@
                 <!-- Nav -->
                   <nav id="nav">
                     <ul>
-                      <li class="current_page_item"><a href="index.html">Home</a></li>
-                      <li><a href="/#/galeria">Galeria</a></li>
-                      <li><a href="right-sidebar.html">Sobre mim</a></li>
-                      <li><a href="no-sidebar.html">Entre em contato</a></li>
+                      <li class="current_page_item"><a href="/">Home</a></li>
+                      <li><a href="/galeria">Galeria</a></li>
+                      <li><a href="/sobre-mim">Sobre mim</a></li>
+                      <li><a href="/contato">Entre em contato</a></li>
                     </ul>
                   </nav>
               </header>
@@ -79,13 +93,13 @@
           
             <!-- Links -->
               <section class="widget-links">
-                <h2>Random Stuff</h2>
+                <h2>Sites de decoração</h2>
                 <ul class="style2">
-                  <li><a href="#">Etiam feugiat condimentum</a></li>
-                  <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                  <li><a href="#">Sed porttitor cras in erat nec</a></li>
-                  <li><a href="#">Felis varius pellentesque potenti</a></li>
-                  <li><a href="#">Nullam scelerisque blandit leo</a></li>
+                  <li><a href="#">Decoração 1</a></li>
+                  <li><a href="#">Decoração 2</a></li>
+                  <li><a href="#">Decoração 3</a></li>
+                  <li><a href="#">Decoração 4</a></li>
+                  <li><a href="#">Decoração 5</a></li>
                 </ul>
               </section>
           
@@ -94,33 +108,18 @@
           
             <!-- Links -->
               <section class="widget-links">
-                <h2>Random Stuff</h2>
+                <h2>Pedras utilizadas</h2>
                 <ul class="style2">
-                  <li><a href="#">Etiam feugiat condimentum</a></li>
-                  <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                  <li><a href="#">Sed porttitor cras in erat nec</a></li>
-                  <li><a href="#">Felis varius pellentesque potenti</a></li>
-                  <li><a href="#">Nullam scelerisque blandit leo</a></li>
+                  <li><a href="#">Pedra Madeira</a></li>
+                  <li><a href="#">Pedra 1</a></li>
+                  <li><a href="#">Pedra 2</a></li>
+                  <li><a href="#">Pedra 3</a></li>
+                  <li><a href="#">Pedra 4</a></li>
                 </ul>
               </section>
           
           </div>
-          <div class="3u">
-          
-            <!-- Links -->
-              <section class="widget-links">
-                <h2>Random Stuff</h2>
-                <ul class="style2">
-                  <li><a href="#">Etiam feugiat condimentum</a></li>
-                  <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                  <li><a href="#">Sed porttitor cras in erat nec</a></li>
-                  <li><a href="#">Felis varius pellentesque potenti</a></li>
-                  <li><a href="#">Nullam scelerisque blandit leo</a></li>
-                </ul>
-              </section>
-          
-          </div>
-          <div class="3u">
+         <div class="3u">
           
             <!-- Contact -->
               <section class="widget-contact last">
@@ -133,6 +132,15 @@
                 <p>Campinas e regi&atilde;o<br />
                 contato@pedreirocampinas.com.br<br />
                 (19) 9.XXXX-XXXX</p>
+              </section>
+          
+          </div>
+           <div class="3u">
+          
+            <!-- Links -->
+              <section class="widget-links">
+                <h2>Cobertura</h2>
+                <div id="map-canvas"></div> 
               </section>
           
           </div>

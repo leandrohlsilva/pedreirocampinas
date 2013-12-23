@@ -15,8 +15,16 @@ angular.module('pedreirocampinasApp', [
       template: 'Not found! :('
     })
     .state('galeria', {
-      url: '/#/galeria',
-      template: 'Not found! :('
+      url: '/galeria',
+      templateUrl: '/views/galeria.html'
+    })
+    .state('sobre-mim', {
+      url: '/sobre-mim',
+      templateUrl: '/views/sobre-mim.html'
+    })
+    .state('contato', {
+      url: '/contato',
+      templateUrl: '/views/contato.html'
     });
     $locationProvider.html5Mode(true).hashPrefix('!');
   });
