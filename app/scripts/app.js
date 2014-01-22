@@ -15,7 +15,7 @@ angular.module('pedreirocampinasApp', [
     })
     .state('404', {
       url: '/404',
-      template: 'Not found! :('
+      template: 'P&aacute;gina n&atilde;o encontrada! :('
     })
     .state('galeria', {
       url: '/galeria',
