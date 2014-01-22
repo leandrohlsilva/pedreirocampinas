@@ -11,7 +11,7 @@ angular.module('pedreirocampinasApp', [
     $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: '/views/main.html'
+      templateUrl: '/partials/main.html'
     })
     .state('404', {
       url: '/404',
@@ -19,7 +19,7 @@ angular.module('pedreirocampinasApp', [
     })
     .state('galeria', {
       url: '/galeria',
-      templateUrl: '/views/galeria.html',
+      templateUrl: '/partials/galeria.html',
       controller: function ($scope) {
         var numImages = 42;
         var i = 0;
@@ -46,11 +46,11 @@ angular.module('pedreirocampinasApp', [
     })
     .state('sobre-mim', {
       url: '/sobre-mim',
-      templateUrl: '/views/sobre-mim.html'
+      templateUrl: '/partials/sobre-mim.html'
     })
     .state('contato', {
       url: '/contato',
-      templateUrl: '/views/contato.html'
+      templateUrl: '/partials/contato.html'
     });
     $locationProvider.html5Mode(true).hashPrefix('!');
   });
