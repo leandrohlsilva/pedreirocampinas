@@ -11,16 +11,27 @@ angular.module('pedreirocampinasApp', [
     $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: '/partials/main.html'
+      templateUrl: '/partials/main.html',
+      controller: function ($scope, $rootScope) {
+        $rootScope.home = true;
+        $rootScope.galeria = false;
+        $rootScope.sobre = false;
+        $rootScope.contato = false;
+      }
     })
     .state('404', {
       url: '/404',
-      template: 'Not found! :('
+      template: 'Essa página não existe! :('
     })
     .state('galeria', {
       url: '/galeria',
       templateUrl: '/partials/galeria.html',
-      controller: function ($scope) {
+      controller: function ($scope, $rootScope) {
+        $rootScope.home = false;
+        $rootScope.galeria = true;
+        $rootScope.sobre = false;
+        $rootScope.contato = false;
+
         var numImages = 42;
         var i = 0;
         $scope.images = [];
@@ -46,11 +57,24 @@ angular.module('pedreirocampinasApp', [
     })
     .state('sobre-mim', {
       url: '/sobre-mim',
-      templateUrl: '/partials/sobre-mim.html'
+      templateUrl: '/partials/sobre-mim.html',
+      controller: function ($scope, $rootScope) {
+        $rootScope.home = false;
+        $rootScope.galeria = false;
+        $rootScope.sobre = true;
+        $rootScope.contato = false;
+      }
     })
     .state('contato', {
       url: '/contato',
-      templateUrl: '/partials/contato.html'
+      templateUrl: '/partials/contato.html',
+      controller: function ($scope, $rootScope) {
+        $rootScope.home = false;
+        $rootScope.galeria = false;
+        $rootScope.sobre = false;
+        $rootScope.contato = true;
+      }
+
     });
     $locationProvider.html5Mode(true).hashPrefix('!');
   });
