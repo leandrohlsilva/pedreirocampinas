@@ -64,10 +64,10 @@
                 <!-- Nav -->
                   <nav id="nav">
                     <ul>
-                      <li class="current_page_item"><a href="/">Home</a></li>
-                      <li><a href="/galeria">Galeria</a></li>
-                      <li><a href="/sobre-mim">Sobre mim</a></li>
-                      <li><a href="/contato">Entre em contato</a></li>
+                      <li ng-class="{current_page_item: home}"><a href="/">Home</a></li>
+                      <li ng-class="{current_page_item: galeria}"><a ui-sref="galeria">Galeria</a></li>
+                      <li ng-class="{current_page_item: sobre}"><a href="/sobre-mim">Sobre mim</a></li>
+                      <li ng-class="{current_page_item: contato}"><a href="/contato">Entre em contato</a></li>
                     </ul>
                   </nav>
               </header>
@@ -126,7 +126,7 @@
                 </ul>
                 <p>Campinas e regi&atilde;o<br />
                 contato@pedreirocampinas.com.br<br />
-                (19) 9.XXXX-XXXX</p>
+                (19) 9.9827-5682</p>
               </section>
           
           </div>
@@ -135,7 +135,9 @@
             <!-- Links -->
               <section class="widget-links">
                 <h2>Cobertura</h2>
-                <div id="map-canvas"></div> 
+                <div id="map-canvas">
+                  <img style="width: 100%;" alt="Mapa da Região Metropolitana de Campinas" ng-src="/images/mapa.jpg">
+                </div> 
               </section>
           
           </div>
