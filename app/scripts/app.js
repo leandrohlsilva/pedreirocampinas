@@ -8,11 +8,12 @@ angular.module('pedreirocampinasApp', [
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     // $urlRouterProvider.otherwise('/404');
+
     $stateProvider
     .state('home', {
       url: '/',
       templateUrl: '/partials/main.html',
-      controller: function ($scope, $rootScope) {
+      controller: function ($rootScope) {
         $rootScope.home = true;
         $rootScope.galeria = false;
         $rootScope.sobre = false;
@@ -21,7 +22,7 @@ angular.module('pedreirocampinasApp', [
     })
     .state('404', {
       url: '/404',
-      template: 'Essa página não existe! :('
+      templateUrl: '/partials/404.html'
     })
     .state('galeria', {
       url: '/galeria',
@@ -49,7 +50,6 @@ angular.module('pedreirocampinasApp', [
           });
 
         $scope.gallery = function () {
-            console.log('start gallery');
             event.preventDefault();
             blueimp.Gallery($('#links a'), $('#blueimp-gallery').data());
           };
@@ -58,7 +58,7 @@ angular.module('pedreirocampinasApp', [
     .state('sobre-mim', {
       url: '/sobre-mim',
       templateUrl: '/partials/sobre-mim.html',
-      controller: function ($scope, $rootScope) {
+      controller: function ($rootScope) {
         $rootScope.home = false;
         $rootScope.galeria = false;
         $rootScope.sobre = true;
@@ -68,7 +68,7 @@ angular.module('pedreirocampinasApp', [
     .state('contato', {
       url: '/contato',
       templateUrl: '/partials/contato.html',
-      controller: function ($scope, $rootScope) {
+      controller: function ($rootScope) {
         $rootScope.home = false;
         $rootScope.galeria = false;
         $rootScope.sobre = false;

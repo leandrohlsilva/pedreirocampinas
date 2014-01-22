@@ -1,7 +1,5 @@
 <div class="container">
-  <form class="form-inline row" style="
-        margin: 20px 52px;
-        ">
+  <form class="form-inline">
     <div class="col-sm-offset-3 col-sm-8">
       <div class="form-group">
         <button ng-click="gallery()" id="image-gallery-button" type="button" class="btn btn-primary btn-lg">
@@ -21,9 +19,8 @@
       </div>
     </div>
   </form>
-    <div id="links" class="col-sm-offset-1 col-sm-10" style="
-          width: 100%;
-          ">
+
+  <div id="links">
     <a ng-repeat="img in images" href="/images/gallery/{{img}}.jpg" title="Foto {{img}}" data-gallery>
       <img ng-src="/images/gallery/{{img}}.jpg" alt="{{img}}" width="200" height="200">
     </a>
