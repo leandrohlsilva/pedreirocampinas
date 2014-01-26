@@ -15,26 +15,13 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,800" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Oleo+Script:400" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <!-- 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEXjqnNI8kHLeXdDoGThr8UVQDF_CioaE&sensor=false"></script>
-    <script type="text/javascript">
-          function initialize() {
-                      var mapOptions = {
-                                    center: new google.maps.LatLng(-34.397, 150.644),
-                                                      zoom: 8
-                                                                  };
-                              var map = new google.maps.Map(document.getElementById("map-canvas"),
-                                                  mapOptions);
-                                    }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    -->
-        <!-- build:css(app) /styles/main.css -->
-          <link rel="stylesheet" href="/css/skel-noscript.css" />
-          <link rel="stylesheet" href="/css/style.css" />
-          <link rel="stylesheet" href="/css/style-desktop.css" />
-          <link rel="stylesheet" href="/css/bootstrap-image-gallery.min.css">
-        <!-- endbuild -->
+
+    <!-- build:css(app) /styles/main.css -->
+      <link rel="stylesheet" href="/css/skel-noscript.css" />
+      <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="/css/style-desktop.css" />
+      <link rel="stylesheet" href="/css/blueimp-gallery.min.css">
+    <!-- endbuild -->
 </head>
   <body ng-app="pedreirocampinasApp" class="homepage">
     <!--[if lt IE 7]>
@@ -163,10 +150,17 @@
        ga('send', 'pageview');
     </script>
 
-        <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-        <script src="/js/bootstrap-image-gallery.min.js"></script>
         <!-- build:js(app) /scripts/vendor.js -->
         <script src="/bower_components/jquery/jquery.js"></script>
+        <script src="/js/blueimp-gallery.min.js"></script>
+        <script src="/js/blueimp-helper.js"></script>
+        <script src="/js/blueimp-gallery.js"></script>
+        <script src="/js/blueimp-gallery-fullscreen.js"></script>
+        <script src="/js/blueimp-gallery-indicator.js"></script>
+        <script src="/js/blueimp-gallery-video.js"></script>
+        <script src="/js/blueimp-gallery-vimeo.js"></script>
+        <script src="/js/blueimp-gallery-youtube.js"></script>
+        <script src="/js/jquery.blueimp-gallery.js"></script>
         <script src="/bower_components/angular/angular.js"></script>
         <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="/bower_components/sass-bootstrap/js/affix.js"></script>
@@ -185,7 +179,6 @@
 
         <!-- build:js(app) /scripts/scripts.js -->
         <script src="/scripts/app.js"></script>
-        <script src="/scripts/controllers/main.js"></script>
         <script src="/js/config.js"></script>
         <script src="/js/skel.min.js"></script>
         <!-- endbuild -->
