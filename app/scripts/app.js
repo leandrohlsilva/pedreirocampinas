@@ -7,7 +7,7 @@ angular.module('pedreirocampinasApp', [
   'ui.router'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-    // $urlRouterProvider.otherwise('/404');
+    $urlRouterProvider.otherwise('/404');
 
     $stateProvider
     .state('home', {
