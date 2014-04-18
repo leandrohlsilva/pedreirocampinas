@@ -9,7 +9,6 @@
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-autoprefixer": "~0.7.2",
-    "grunt-bower-install": "~1.3.0",
     "grunt-concurrent": "~0.5.0",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-compass": "~0.7.2",
@@ -34,7 +33,7 @@
     "jshint-stylish": "~0.1.5",
     "load-grunt-tasks": "~0.4.0",
     "time-grunt": "~0.3.1",
-    "connect-livereload": "~0.3.2",
+    "connect-livereload": "~0.4.0",
     "karma-ng-scenario": "~0.1.0",
     "karma-firefox-launcher": "~0.1.3",
     "karma-script-launcher": "~0.1.0",
