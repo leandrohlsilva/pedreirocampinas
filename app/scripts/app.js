@@ -13,12 +13,12 @@ angular.module('pedreirocampinasApp', [
     .state('home', {
       url: '/',
       templateUrl: '/partials/main.html',
-      controller: function ($rootScope) {
+      controller: ['$rootScope', function ($rootScope) {
         $rootScope.home = true;
         $rootScope.galeria = false;
         $rootScope.sobre = false;
         $rootScope.contato = false;
-      }
+      }]
     })
     .state('404', {
       url: '/404',
@@ -27,7 +27,7 @@ angular.module('pedreirocampinasApp', [
     .state('galeria', {
       url: '/galeria',
       templateUrl: '/partials/galeria.html',
-      controller: function ($scope, $rootScope) {
+      controller: ['$scope', '$rootScope', function ($scope, $rootScope) {
         $rootScope.home = false;
         $rootScope.galeria = true;
         $rootScope.sobre = false;
@@ -53,28 +53,27 @@ angular.module('pedreirocampinasApp', [
             event.preventDefault();
             blueimp.Gallery($('#links a'), $('#blueimp-gallery').data());
           };
-      }
+      }]
     })
     .state('sobre-mim', {
       url: '/sobre-mim',
       templateUrl: '/partials/sobre-mim.html',
-      controller: function ($rootScope) {
+      controller: ['$rootScope', function ($rootScope) {
         $rootScope.home = false;
         $rootScope.galeria = false;
         $rootScope.sobre = true;
         $rootScope.contato = false;
-      }
+      }]
     })
     .state('contato', {
       url: '/contato',
       templateUrl: '/partials/contato.html',
-      controller: function ($rootScope) {
+      controller: ['$rootScope', function ($rootScope) {
         $rootScope.home = false;
         $rootScope.galeria = false;
         $rootScope.sobre = false;
         $rootScope.contato = true;
-      }
-
+      }]
     });
     $locationProvider.html5Mode(true).hashPrefix('!');
   });
